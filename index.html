@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Riya Patel's software and engineering portfolio">
 
     <title>Riya Patel | Portfolio</title>
+
+    <meta
+        name="description"
+        content="Riya Patel - UC San Diego student interested in software development, artificial intelligence, and embedded systems."
+    >
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- NAVIGATION -->
-    <nav>
-        <a href="#home" class="logo">RP</a>
+    <!-- ==================== NAVIGATION ==================== -->
+
+    <nav class="navbar">
+        <a href="#home" class="nav-logo">RP</a>
 
         <div class="nav-links">
             <a href="#about">About</a>
@@ -26,444 +30,733 @@
     </nav>
 
 
-    <!-- HERO -->
-    <header class="hero" id="home">
+    <!-- ==================== HERO ==================== -->
 
+    <header id="home" class="hero">
         <div class="hero-content">
 
             <p class="eyebrow">HI, I'M</p>
 
             <h1>Riya Patel.</h1>
 
-            <h2>
-                I like building things with
-                <span>software.</span>
-            </h2>
+            <h2>I like building things with software.</h2>
 
             <p class="hero-description">
-                I'm a Computer Science student at UC San Diego interested
-                in software development, artificial intelligence, and
-                hands-on engineering.
+                I'm a student at UC San Diego interested in software development,
+                artificial intelligence, embedded systems, and building technology
+                that interacts with the real world.
             </p>
 
             <div class="hero-buttons">
-
-                <a href="#projects" class="button primary">
-                    View my projects
+                <a href="#projects" class="button primary-button">
+                    View My Work
                 </a>
 
-                <a href="https://github.com/riya-235"
-                   target="_blank"
-                   class="button secondary">
-                    GitHub ↗
+                <a
+                    href="https://github.com/riya-235"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="button secondary-button"
+                >
+                    GitHub
                 </a>
-
             </div>
 
         </div>
-
-        <div class="scroll-hint">
-            ↓
-        </div>
-
     </header>
 
 
-    <!-- ABOUT -->
-    <section id="about">
+    <main>
 
-        <div class="section-heading">
-            <p class="section-label">01 / ABOUT</p>
-            <h2>A little about me.</h2>
-        </div>
+        <!-- ==================== ABOUT ==================== -->
 
-        <div class="about-grid">
-
-            <div class="about-main">
-
-                <p>
-                    I'm a Computer Science student at UC San Diego who
-                    enjoys turning ideas into things that actually work.
-                    My interests span software development, artificial
-                    intelligence, and engineering.
-                </p>
-
-                <p>
-                    I'm especially interested in projects where software
-                    interacts with physical systems. I enjoy the process
-                    of building, debugging, experimenting, and eventually
-                    seeing a system work in the real world.
-                </p>
-
+        <section id="about" class="section">
+            <div class="section-heading">
+                <p class="section-number">01.</p>
+                <h2>About Me</h2>
             </div>
 
-            <div class="skills">
+            <div class="about-grid">
 
-                <p class="small-heading">TECHNOLOGIES I'VE WORKED WITH</p>
-
-                <div class="skill-list">
-                    <span>Python</span>
-                    <span>Java</span>
-                    <span>C++</span>
-                    <span>Swift</span>
-                    <span>JavaScript</span>
-                    <span>HTML / CSS</span>
-                    <span>Firebase</span>
-                    <span>Git / GitHub</span>
-                    <span>Raspberry Pi</span>
-                    <span>Arduino</span>
+                <div class="about-photo-wrapper">
+                    <img
+                        src="Images/picOfMe.jpg"
+                        alt="Riya Patel"
+                        class="about-photo"
+                    >
                 </div>
 
+                <div class="about-content">
+
+                    <p>
+                        I'm a student at UC San Diego interested in computer science,
+                        artificial intelligence, and the intersection between software
+                        and physical systems.
+                    </p>
+
+                    <p>
+                        I enjoy taking ideas from an initial concept to something that
+                        actually works. My projects have ranged from developing flight
+                        software for a high-altitude BalloonSat to researching AI
+                        tutoring systems, developing mobile applications, and building
+                        robotics projects.
+                    </p>
+
+                    <p>
+                        I especially enjoy collaborative projects where I can learn new
+                        technologies, solve technical problems, and see how my work
+                        contributes to a larger system.
+                    </p>
+
+                    <h3>Technologies I've worked with</h3>
+
+                    <div class="skills-grid">
+                        <span>Python</span>
+                        <span>Java</span>
+                        <span>C++</span>
+                        <span>JavaScript</span>
+                        <span>HTML / CSS</span>
+                        <span>Swift / SwiftUI</span>
+                        <span>Kotlin</span>
+                        <span>Git / GitHub</span>
+                        <span>Firebase</span>
+                        <span>NumPy</span>
+                        <span>Pandas</span>
+                        <span>Matplotlib</span>
+                        <span>Raspberry Pi</span>
+                        <span>Arduino</span>
+                        <span>I2C / UART</span>
+                        <span>LoRa / GNSS</span>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ==================== PROJECTS ==================== -->
+
+        <section id="projects" class="section">
+
+            <div class="section-heading">
+                <p class="section-number">02.</p>
+                <h2>Featured Projects</h2>
             </div>
 
-        </div>
 
-    </section>
+            <!-- BALLOONSAT -->
 
+            <article class="project-card">
 
-    <!-- PROJECTS -->
-    <section id="projects">
-
-        <div class="section-heading">
-            <p class="section-label">02 / PROJECTS</p>
-            <h2>Things I've built.</h2>
-        </div>
-
-
-        <!-- BALLOONSAT -->
-        <article class="project project-large">
-
-            <div class="project-gallery balloon-gallery">
-
-                <img
-                    class="main-project-image"
-                    src="Images/BalloonOne.JPG"
-                    alt="High-altitude balloon project">
-
-                <div class="gallery-small">
+                <div class="project-images balloon-gallery">
+                    <img
+                        src="Images/BalloonOne.JPG"
+                        alt="BalloonSat project"
+                    >
 
                     <img
-                        src="Images/BalloonTwo.JPG"
-                        alt="BalloonSat hardware">
+                        src="Images/BalloonFour.JPG"
+                        alt="BalloonSat hardware"
+                    >
 
                     <img
-                        src="Images/BalloonThree.JPG"
-                        alt="BalloonSat development">
+                        src="Images/BalloonFive.JPG"
+                        alt="BalloonSat launch"
+                    >
+                </div>
+
+                <div class="project-content">
+
+                    <p class="project-label">FEATURED PROJECT</p>
+
+                    <h3>High-Altitude BalloonSat</h3>
+
+                    <p>
+                        Led a 10-member software team developing the flight software
+                        for a high-altitude BalloonSat designed to collect atmospheric
+                        data and study the relationship between ozone and UV levels
+                        throughout the stratosphere.
+                    </p>
+
+                    <p>
+                        Developed Python software integrating ozone, UV, altitude,
+                        GPS, and environmental sensors on a Raspberry Pi-based flight
+                        system. I also worked on LoRa telemetry, GPS communication,
+                        camera integration, data logging, and system testing.
+                    </p>
+
+                    <p>
+                        The BalloonSat successfully launched on May 1, 2026. I also
+                        presented our work at the SmallSat Education Conference at
+                        Kennedy Space Center.
+                    </p>
+
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Raspberry Pi</span>
+                        <span>LoRa</span>
+                        <span>GNSS</span>
+                        <span>Sensors</span>
+                        <span>Telemetry</span>
+                    </div>
 
                 </div>
 
+            </article>
+
+
+            <!-- CONNECT 4 -->
+
+            <article class="project-card reverse">
+
+                <div class="project-document">
+
+                    <div class="document-preview">
+                        <div class="document-icon">AI</div>
+
+                        <h4>Creating an AI Tutor for Connect 4</h4>
+
+                        <p>
+                            San José State University Research Project
+                        </p>
+
+                        <a
+                            href="Images/SJSUProject.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="text-link"
+                        >
+                            View project PDF →
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="project-content">
+
+                    <p class="project-label">AI RESEARCH</p>
+
+                    <h3>Connect-4 AI Tutor</h3>
+
+                    <p>
+                        Developed an AI tutoring system as part of a research project
+                        at San José State University investigating how different levels
+                        of AI assistance affect learning.
+                    </p>
+
+                    <p>
+                        Built three tutoring models with varying levels of instructional
+                        guidance and tested them with beginner Connect-4 players. The
+                        system incorporated Google's Gemini LLM and retrieval-augmented
+                        generation to provide strategic guidance.
+                    </p>
+
+                    <p>
+                        We found that providing more AI instruction did not necessarily
+                        improve learning, suggesting that over-instruction can interfere
+                        with independent problem-solving.
+                    </p>
+
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Tkinter</span>
+                        <span>Gemini API</span>
+                        <span>RAG</span>
+                        <span>AI</span>
+                        <span>Data Analysis</span>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- ACTION FOR ANIMALS -->
+
+            <article class="project-card">
+
+                <div class="project-phone-area">
+
+                    <div class="phone-frame">
+                        <img
+                            src="Images/AFA.PNG"
+                            alt="Action for Animals mobile application"
+                        >
+                    </div>
+
+                </div>
+
+                <div class="project-content">
+
+                    <p class="project-label">MOBILE DEVELOPMENT</p>
+
+                    <h3>Action for Animals</h3>
+
+                    <p>
+                        Contributed to the development of a mobile application that
+                        helps users quickly contact representatives and take action
+                        on animal-rights issues.
+                    </p>
+
+                    <p>
+                        Developed and maintained application features across mobile
+                        platforms, working with SwiftUI, Kotlin, Firebase, APIs, and
+                        backend functionality. I also implemented features, fixed bugs,
+                        tested functionality, and collaborated on the application's
+                        interface and design.
+                    </p>
+
+                    <p>
+                        The application was published on both the Apple App Store and
+                        Google Play Store.
+                    </p>
+
+                    <div class="project-tech">
+                        <span>SwiftUI</span>
+                        <span>Kotlin</span>
+                        <span>Firebase</span>
+                        <span>Mobile Development</span>
+                        <span>APIs</span>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- H2GP -->
+
+            <article class="project-card reverse">
+
+                <div class="project-images single-image">
+                    <img
+                        src="Images/H2GPTwo.jpeg"
+                        alt="Hydrogen Grand Prix race car"
+                    >
+                </div>
+
+                <div class="project-content">
+
+                    <p class="project-label">ENGINEERING</p>
+
+                    <h3>Hydrogen Grand Prix</h3>
+
+                    <p>
+                        Designed, tested, and raced a hydrogen-powered endurance car
+                        as part of a student engineering team.
+                    </p>
+
+                    <p>
+                        Our team placed second at the Northern California regional
+                        competition, advanced through the state competition, and
+                        qualified for the Hydrogen Grand Prix World Finals in
+                        Switzerland.
+                    </p>
+
+                    <p>
+                        The project gave me experience with iterative engineering,
+                        troubleshooting, testing, and collaborating under real
+                        competition constraints.
+                    </p>
+
+                    <div class="project-tech">
+                        <span>Engineering</span>
+                        <span>Prototyping</span>
+                        <span>Testing</span>
+                        <span>Teamwork</span>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- COSMOS -->
+
+            <article class="project-card">
+
+                <div class="project-placeholder">
+                    <div>
+                        <span>C++</span>
+                        <h4>Robotic Vending Machine</h4>
+                    </div>
+                </div>
+
+                <div class="project-content">
+
+                    <p class="project-label">ROBOTICS</p>
+
+                    <h3>UC Davis COSMOS</h3>
+
+                    <p>
+                        Selected for the Computers in Robotics &amp; Biophysics cluster
+                        at UC Davis COSMOS, an intensive four-week STEM program.
+                    </p>
+
+                    <p>
+                        For our robotics project, my partner and I engineered an
+                        automated vending machine using C++. We implemented sensors,
+                        conveyor systems, and inventory logic to create an autonomous
+                        dispensing system.
+                    </p>
+
+                    <p>
+                        I also developed a Python simulation modeling DNA modification
+                        and CRISPR-inspired genome editing processes as part of the
+                        biophysics portion of the program.
+                    </p>
+
+                    <div class="project-tech">
+                        <span>C++</span>
+                        <span>Python</span>
+                        <span>Robotics</span>
+                        <span>Sensors</span>
+                        <span>Biophysics</span>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- NEXTUP -->
+
+            <article class="project-card reverse">
+
+                <div class="project-placeholder">
+                    <div>
+                        <span>&lt;/&gt;</span>
+                        <h4>NextUp Initiative</h4>
+                    </div>
+                </div>
+
+                <div class="project-content">
+
+                    <p class="project-label">EDUCATION + SOFTWARE</p>
+
+                    <h3>NextUp Initiative</h3>
+
+                    <p>
+                        Co-founded NextUp to expand access to computer science education
+                        through coding workshops, hackathons, competitions, and STEM
+                        outreach for younger students.
+                    </p>
+
+                    <p>
+                        I helped design and develop the organization's website using
+                        HTML, CSS, and JavaScript, including systems for finding events
+                        and accessing coding competitions. I also designed and taught
+                        beginner Python courses and provided technical feedback to
+                        students during competitions.
+                    </p>
+
+                    <p>
+                        Through NextUp, we organized programming events for hundreds
+                        of elementary and middle school students and ran technology
+                        drives and fundraising initiatives to expand access to STEM
+                        resources.
+                    </p>
+
+                    <div class="project-tech">
+                        <span>JavaScript</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Python</span>
+                        <span>Leadership</span>
+                    </div>
+
+                </div>
+
+            </article>
+
+        </section>
+
+
+        <!-- ==================== EXPERIENCE ==================== -->
+
+        <section id="experience" class="section">
+
+            <div class="section-heading">
+                <p class="section-number">03.</p>
+                <h2>Experience</h2>
             </div>
 
+            <div class="experience-list">
 
-            <div class="project-info">
 
-                <p class="project-number">01</p>
+                <article class="experience-item">
 
-                <p class="project-category">
-                    SOFTWARE · EMBEDDED SYSTEMS · ENGINEERING
-                </p>
+                    <div class="experience-date">
+                        May 2025 — Jun 2026
+                    </div>
 
-                <h3>High-Altitude BalloonSat</h3>
+                    <div class="experience-info">
+                        <h3>Software Mission Lead</h3>
 
-                <p class="project-role">
-                    Software Mission Lead
-                </p>
+                        <p class="experience-company">
+                            Women in Satellite Engineering (WiSE)
+                        </p>
 
-                <p class="project-description">
-                    Led software development for a high-altitude balloon
-                    mission designed to investigate the relationship
-                    between ozone and UV levels throughout different
-                    levels of the stratosphere.
-                </p>
+                        <p>
+                            Led a 10-member software team developing Python flight
+                            software for a Raspberry Pi-based BalloonSat. Integrated
+                            atmospheric sensors, GPS, LoRa telemetry, and data logging
+                            systems and helped lead the mission through a successful
+                            high-altitude launch.
+                        </p>
 
-                <p class="project-description">
-                    I worked on software for the ozone, UV, and altitude
-                    sensors and helped integrate GPS, LoRa communication,
-                    a camera, and flight data logging. Our team successfully
-                    launched the balloon and collected telemetry and images
-                    throughout the flight.
-                </p>
+                        <div class="experience-tags">
+                            <span>Python</span>
+                            <span>Raspberry Pi</span>
+                            <span>Telemetry</span>
+                            <span>Leadership</span>
+                        </div>
+                    </div>
 
-                <div class="tags">
-                    <span>Python</span>
-                    <span>Raspberry Pi</span>
-                    <span>LoRa</span>
-                    <span>GPS</span>
-                    <span>Sensors</span>
-                    <span>Data Logging</span>
-                </div>
+                </article>
+
+
+                <article class="experience-item">
+
+                    <div class="experience-date">
+                        Jun 2025 — Sep 2025
+                    </div>
+
+                    <div class="experience-info">
+                        <h3>Application Developer</h3>
+
+                        <p class="experience-company">
+                            Strategic Action for Animals
+                        </p>
+
+                        <p>
+                            Developed and maintained mobile application features using
+                            SwiftUI, Kotlin, Firebase, APIs, and backend services.
+                            Implemented functionality, debugged issues, tested code,
+                            and contributed to applications published on the Apple
+                            App Store and Google Play Store.
+                        </p>
+
+                        <div class="experience-tags">
+                            <span>SwiftUI</span>
+                            <span>Kotlin</span>
+                            <span>Firebase</span>
+                            <span>APIs</span>
+                        </div>
+                    </div>
+
+                </article>
+
+
+                <article class="experience-item">
+
+                    <div class="experience-date">
+                        Jun 2025 — Aug 2025
+                    </div>
+
+                    <div class="experience-info">
+                        <h3>Artificial Intelligence Researcher</h3>
+
+                        <p class="experience-company">
+                            San José State University
+                        </p>
+
+                        <p>
+                            Developed and evaluated AI tutoring models in Python,
+                            conducted user testing with beginner Connect-4 players,
+                            and analyzed how different levels of AI instruction
+                            affected learning and performance.
+                        </p>
+
+                        <div class="experience-tags">
+                            <span>Python</span>
+                            <span>AI</span>
+                            <span>Gemini</span>
+                            <span>Research</span>
+                        </div>
+                    </div>
+
+                </article>
+
+
+                <article class="experience-item">
+
+                    <div class="experience-date">
+                        Mar 2026 — Aug 2026
+                    </div>
+
+                    <div class="experience-info">
+                        <h3>Coding Instructor</h3>
+
+                        <p class="experience-company">
+                            theCoderSchool Fremont
+                        </p>
+
+                        <p>
+                            Taught K–12 students Python, Scratch, game development,
+                            robotics, 3D printing, and introductory computer science
+                            through individual coaching and summer camps. Guided
+                            students through programming projects, debugging, and
+                            computational problem solving.
+                        </p>
+
+                        <div class="experience-tags">
+                            <span>Python</span>
+                            <span>Teaching</span>
+                            <span>Robotics</span>
+                            <span>Mentoring</span>
+                        </div>
+                    </div>
+
+                </article>
+
+
+                <article class="experience-item">
+
+                    <div class="experience-date">
+                        Apr 2026 — Sep 2026
+                    </div>
+
+                    <div class="experience-info">
+                        <h3>Math Tutor</h3>
+
+                        <p class="experience-company">
+                            Think Zone Learning Center
+                        </p>
+
+                        <p>
+                            Tutored K–12 students through individualized and
+                            small-group sessions, adapting explanations and
+                            problem-solving strategies to different learning styles
+                            and levels of mathematical experience.
+                        </p>
+
+                        <div class="experience-tags">
+                            <span>Mathematics</span>
+                            <span>Teaching</span>
+                            <span>Mentoring</span>
+                        </div>
+                    </div>
+
+                </article>
+
+
+                <article class="experience-item">
+
+                    <div class="experience-date">
+                        Jun 2024 — Aug 2026
+                    </div>
+
+                    <div class="experience-info">
+                        <h3>Co-Founder</h3>
+
+                        <p class="experience-company">
+                            NextUp Initiative
+                        </p>
+
+                        <p>
+                            Co-founded and led a computer science education initiative
+                            organizing coding workshops, hackathons, programming
+                            competitions, Python courses, and STEM outreach for
+                            elementary and middle school students.
+                        </p>
+
+                        <div class="experience-tags">
+                            <span>Leadership</span>
+                            <span>Python</span>
+                            <span>Web Development</span>
+                            <span>Education</span>
+                        </div>
+                    </div>
+
+                </article>
+
+
+                <article class="experience-item">
+
+                    <div class="experience-date">
+                        Jul 2024 — Aug 2024
+                    </div>
+
+                    <div class="experience-info">
+                        <h3>Summer Scholar</h3>
+
+                        <p class="experience-company">
+                            UC Davis COSMOS
+                        </p>
+
+                        <p>
+                            Completed the Computers in Robotics &amp; Biophysics
+                            cluster, developing an autonomous robotic vending machine
+                            in C++ and a Python simulation modeling DNA modification.
+                        </p>
+
+                        <div class="experience-tags">
+                            <span>C++</span>
+                            <span>Python</span>
+                            <span>Robotics</span>
+                        </div>
+                    </div>
+
+                </article>
 
             </div>
+        </section>
 
-        </article>
 
+        <!-- ==================== CONTACT ==================== -->
 
-        <!-- CONNECT 4 -->
-        <article class="project project-split">
+        <section id="contact" class="section contact-section">
 
-            <div class="project-info">
+            <p class="section-number">04.</p>
 
-                <p class="project-number">02</p>
+            <h2>Let's Connect.</h2>
 
-                <p class="project-category">
-                    ARTIFICIAL INTELLIGENCE · RESEARCH
-                </p>
+            <p>
+                I'm always interested in meeting new people, collaborating on
+                projects, and exploring opportunities in software, AI, and
+                engineering.
+            </p>
 
-                <h3>Connect-4 AI Tutor</h3>
-
-                <p class="project-role">
-                    San José State University Research
-                </p>
-
-                <p class="project-description">
-                    Developed a Connect-4 AI tutoring system in Python
-                    while working with an SJSU professor and students.
-                    The project explored how different levels of AI
-                    assistance affected the way users learned the game.
-                </p>
-
-                <p class="project-description">
-                    I developed three levels of instruction and tested the
-                    system with adult novice players, exploring the balance
-                    between helpful AI guidance and over-instruction.
-                </p>
-
-                <div class="tags">
-                    <span>Python</span>
-                    <span>AI</span>
-                    <span>Tkinter</span>
-                    <span>Research</span>
-                </div>
+            <div class="contact-links">
 
                 <a
-                    href="Images/SJSUProject.pdf"
+                    href="mailto:riyarpatel08@gmail.com"
+                    class="button primary-button"
+                >
+                    Email Me
+                </a>
+
+                <a
+                    href="https://github.com/riya-235"
                     target="_blank"
-                    class="project-link">
-                    View project PDF ↗
+                    rel="noopener noreferrer"
+                    class="button secondary-button"
+                >
+                    GitHub
+                </a>
+
+                <!-- Replace # with your LinkedIn URL -->
+                <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="button secondary-button"
+                >
+                    LinkedIn
                 </a>
 
             </div>
 
-            <div class="pdf-preview">
+        </section>
 
-                <div class="pdf-icon">
-                    AI
-                </div>
+    </main>
 
-                <p>Connect-4 AI Tutor</p>
-                <span>Research Project</span>
 
-            </div>
-
-        </article>
-
-
-        <!-- ACTION FOR ANIMALS -->
-        <article class="project project-split reverse">
-
-            <div class="project-image-container">
-
-                <img
-                    src="Images/AFA.PNG"
-                    alt="Action for Animals mobile application">
-
-            </div>
-
-            <div class="project-info">
-
-                <p class="project-number">03</p>
-
-                <p class="project-category">
-                    MOBILE · SOFTWARE DEVELOPMENT
-                </p>
-
-                <h3>Action for Animals</h3>
-
-                <p class="project-role">
-                    App Development Intern
-                </p>
-
-                <p class="project-description">
-                    Worked on the development of a mobile advocacy app
-                    for Action for Animals. I contributed to both mobile
-                    development and backend functionality, helping connect
-                    the application with external data and services.
-                </p>
-
-                <div class="tags">
-                    <span>Swift</span>
-                    <span>Firebase</span>
-                    <span>Mobile Development</span>
-                    <span>Backend</span>
-                </div>
-
-            </div>
-
-        </article>
-
-
-        <!-- H2GP -->
-        <article class="project project-split">
-
-            <div class="project-info">
-
-                <p class="project-number">04</p>
-
-                <p class="project-category">
-                    ENGINEERING · COMPETITION
-                </p>
-
-                <h3>Hydrogen Grand Prix</h3>
-
-                <p class="project-role">
-                    H2GP World Finals
-                </p>
-
-                <p class="project-description">
-                    Worked with my team to build and race a hydrogen-powered
-                    endurance car through regional and state competitions.
-                    We qualified for the H2GP World Finals in Switzerland.
-                </p>
-
-                <p class="project-description">
-                    The project gave me hands-on experience with iterative
-                    engineering, testing, troubleshooting, and working as
-                    part of a technical team.
-                </p>
-
-                <div class="tags">
-                    <span>Engineering</span>
-                    <span>Prototyping</span>
-                    <span>Testing</span>
-                    <span>Teamwork</span>
-                </div>
-
-            </div>
-
-            <div class="project-image-container">
-
-                <img
-                    src="Images/H2GPTwo.jpeg"
-                    alt="Hydrogen Grand Prix car">
-
-            </div>
-
-        </article>
-
-    </section>
-
-
-    <!-- EXPERIENCE -->
-    <section id="experience">
-
-        <div class="section-heading">
-            <p class="section-label">03 / EXPERIENCE</p>
-            <h2>Where I've worked.</h2>
-        </div>
-
-
-        <div class="experience-row">
-
-            <div class="experience-date">
-                2025 — 2026
-            </div>
-
-            <div class="experience-details">
-                <h3>Software Mission Lead</h3>
-                <p class="company">WiSE BalloonSat</p>
-
-                <p>
-                    Led software development and integration for a
-                    high-altitude balloon mission.
-                </p>
-            </div>
-
-        </div>
-
-
-        <div class="experience-row">
-
-            <div class="experience-date">
-                2025
-            </div>
-
-            <div class="experience-details">
-                <h3>App Development Intern</h3>
-                <p class="company">Action for Animals</p>
-
-                <p>
-                    Developed mobile application features and worked
-                    with backend services.
-                </p>
-            </div>
-
-        </div>
-
-
-        <div class="experience-row">
-
-            <div class="experience-date">
-                2025
-            </div>
-
-            <div class="experience-details">
-                <h3>AI Research</h3>
-                <p class="company">San José State University</p>
-
-                <p>
-                    Developed and studied an AI-assisted Connect-4
-                    tutoring system.
-                </p>
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- CONTACT -->
-    <section id="contact">
-
-        <p class="section-label">04 / CONTACT</p>
-
-        <h2>Let's connect.</h2>
-
-        <p class="contact-description">
-            I'm always interested in meeting people who like building
-            interesting things.
-        </p>
-
-        <div class="contact-links">
-
-            <!-- Replace these with your actual links -->
-
-            <a href="https://github.com/riya-235"
-               target="_blank">
-                GitHub ↗
-            </a>
-
-            <a href="www.linkedin.com/in/riyarpatel2008
-
-"
-               target="_blank">
-                LinkedIn ↗
-            </a>
-
-            <a href="riyarpatel08@gmail.com">
-                Email ↗
-            </a>
-
-        </div>
-
-    </section>
-
+    <!-- ==================== FOOTER ==================== -->
 
     <footer>
-
-        <p>Designed & built by Riya Patel</p>
-
-        <p>© 2026</p>
-
+        <p>Designed &amp; built by Riya Patel.</p>
     </footer>
 
 
